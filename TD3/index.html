@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+
+
+<meta charset="UTF-8">
+
+<title>Vélo Montréal</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="C:\wamp64\www\TD3/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="main.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjonwWBWoE1W6L8sU7KPl7zkRLSaPNC2o" id="google_map"></script>
+</head>
+
+
+<body>
+
+<!-- Barre de menu -->
+<div id="barre_menu" class="en-tete">
+    <a href="#" id="velo_montreal">Vélo Montréal</a>
+    <a href="#" id="accueil">Accueil</a>
+    <div id="globe"><i class="fa fa-globe fa-2x"  aria-hidden="true" a href="#"></i> </div>
+</div><!-- Fin barre de menu-->
+
+
+
+    <!-- onglets -->
+ <div id="onglets">
+    <p id="texte_carte">Carte des stations</p>
+    <p id="texte_station">Liste des stations </p>
+
+
+        <!-- Onglets cartes des stations-->
+        <div id="cartes_stations">
+        
+            <!-- Section texte concernant la localisation-->
+            <div id="localisation">
+                <textarea rows="2" cols="55"></textarea>
+                <p id="localisation_texte">Localisation:</p>
+                <p id="selection_localisation"> Lieu </p>
+            
+
+            <!-- Tableau -->
+            <div id="partie_droite">
+            <div id="etat_station">
+                <p id="texte"> État de la station de vélos </p>
+            </div>
+            <div id="ligne_bleu"></div>
+                <table style="width:50%" id="tableau_gauche">
+                    <tr id = "premiere_ligneG">
+                        <td id="text_IDstation" class="premiereColonneG" >ID Station</td>
+                        <td><div id="IDstation" class="boite"></div></td>            
+                    </tr>
+                 <tr id = "deuxieme_ligneG">
+                     <td class="premiereColonneG">Bloquée</td>
+                     <td> <div class="boite"></div> </td>
+                    </tr>
+                 <tr id = "troisieme_ligneG">
+                    <td class="premiereColonneG">Suspendue</td>
+                     <td> <div class="boite"></div></td>
+                 </tr>
+                 <tr id = "quatrieme_ligneG">
+                     <td class="premiereColonneG">Hors service</td>
+                     <td><div class="boite"></div></td>
+                 </tr>
+             </table>
+            <table style="width:50%" id="tableau_droite">
+                    <tr id = "premiere_ligneD">        
+                    <td id="text_velosdisponibles" class="premiereColonneD" >Vélos disponibles</td>
+                    <td><div class="boite"></div></td> 
+                 </tr>
+                     <tr id = "deuxieme_ligneD">
+                     <td class="premiereColonneD">Bornes disponibles</td>
+                     <td><div  class="boite"></div></td>
+                </tr>
+                    <tr id = "troisieme_ligneD">
+                     <td class="premiereColonneD">Vélos indisponibles</td>
+                     <td><div class="boite"></div></td>
+                 </tr>
+                <tr id = "quatrieme_ligneD">
+                     <td class="premiereColonneD">Bornes indisponibles</td>
+                     <td><div class="boite"></div></td>
+                 </tr>
+
+            </table>
+            </div> <!-- Fin partie droite-->
+
+            </div> <!-- Fin localisation-->
+            </div>  <!-- Fin section texte concernant la localisation-->
+
+         </div> <!-- Fin onglets cartes des stations-->    
+
+            <!--Carte montrant la station -->
+            <div id="google_map">
+                   
+                
+                
+            </div>
+
+
+            
+
+    </div><!-- onglets -->
+
+<!--Pagination-->
+
+</body>
+<footer>
+
+</footer>
